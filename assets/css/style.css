@@ -1,27 +1,40 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Calibri';
     font-style: italic;
 }
 
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header{
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 h1{
+    position: relative;
+    top: 30px;
     text-align: left;
+    display: block;
 }
 
 header img{
     width: 100%;
-    height: 150px;
+    height: 200px;
 }
 
-/* #logo{
-    width: 15%;
-    display: inline-block;
-} */
-
 nav{
-    height: 10vh;
-    background-color: rgb(255, 196, 196);
+    height: 5vh;
     padding: 5px;
     text-align: right;
+    position: relative;
+    top: 8px;
 }
 
 nav a{
@@ -34,11 +47,15 @@ nav a{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    border-color: black;
+    border: 3px;
+    box-shadow: 5px 5px lightgray;
 }
 
 h2.principal{
     text-align: center;
+    border: black 2px solid;
 }
 
 /* a[href="#"]{
@@ -55,23 +72,39 @@ a:active{
     background-color: green;
 }
 
-aside {
-    width: 20%;
-    display: inline-block;
-}
-
 a.active{
     background-color: green;
 }
 
+main{
+    padding-top: 5vh;
+}
+
+aside {
+    position: relative;
+    width: 25%;
+    margin: 15px 5px 0px 0px;
+    display: inline-block;
+}
+
 aside img{
-    margin-top: 10px;
-    width: 150px;
-    height: 150px;
+    padding: 0px;
+    width: 30vh;
+    height: 30vh;
 }
 
 section {
-    width: 70%;
+    width: 60%;
     display: inline-block;
-    border-radius: 1rem;
+    text-align: left;
+    position: absolute;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+p{
+    text-indent: 20px;
 }
