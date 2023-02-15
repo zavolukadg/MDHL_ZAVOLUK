@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Calibri';
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 body {
@@ -11,10 +11,17 @@ body {
     padding-right: 20px;
 }
 
-header{
-    /* background-size: cover; */
-    background-size: contain;
+header h1{
+    font-style: italic;
+    font-size: 7vh;
+}
+
+header img{
+    object-fit: cover; 
+    object-position: top;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
 }
 
 h1{
@@ -22,11 +29,6 @@ h1{
     top: 30px;
     text-align: left;
     display: block;
-}
-
-header img{
-    width: 100%;
-    height: 200px;
 }
 
 nav{
@@ -105,6 +107,74 @@ section {
     transition: 2s;
 }
 
-p{
+p.about{
     text-indent: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+dt{
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ol{
+    margin:0;
+    padding: 0;
+}
+
+ol li.lista1{
+    padding-bottom: 10px;
+}
+
+li.lista2{
+    margin-left: 50px;
+}
+
+table{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+th, td{
+    padding: .8rem;
+}
+
+td.phone{
+    padding: 0;
+}
+td.email{
+    text-align: right;
+}
+
+tbody tr:nth-child(even){
+    background-color: white;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #b19696;
+}
+
+thead tr{
+    background-color:black;
+    color:greenyellow;
+}
+
+div.contact{
+    display: flex;
+}
+
+div p.phone,div p.email{
+    width: 40%;
+}
+
+div p.email{
+    text-align: right;
+}
+
+p.aditional{
+    padding-bottom: 20px;
 }
